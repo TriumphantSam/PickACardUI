@@ -31,10 +31,7 @@ namespace PickACardUI
             return "Diamonds";
         }
 
-        internal static string[] PickSomeCards(string )
-        {
-            throw new NotImplementedException();
-        }
+       
 
         private static string RandomValue()
         {

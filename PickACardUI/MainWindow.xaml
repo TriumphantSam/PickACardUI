@@ -20,10 +20,10 @@
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="59,0,0,0" Grid.ColumnSpan="2">
             <Label Content="How many cards should I pick?" FontSize="20"/>
-            <Slider Maximum="15" Minimum="1" AutoToolTipPlacement="TopLeft" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Foreground="Black"/>
+            <Slider x:Name="numberOfCards" Maximum="15" Minimum="1" AutoToolTipPlacement="TopLeft" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Foreground="Black"/>
         </StackPanel>
-        <Button x:Name="list" Content="Pick some cards" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Margin="0,84,0,0" RenderTransformOrigin="-2.025,0.451" Click="list_Click"/>
-        <ListBox x:Name="listOfCards" Grid.Column="2" FontSize="20" Margin="20,20,20,20" Grid.RowSpan="2" SelectionChanged="listOfCards_SelectionChanged"/>
+        <Button x:Name="list" Content="Pick some cards" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Margin="0,84,0,0" RenderTransformOrigin="-2.025,0.451" Click="Button_Click"/>
+        <ListBox x:Name="listOfCards" Grid.Column="2" FontSize="20" Margin="20,20,20,20" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
